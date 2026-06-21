@@ -121,6 +121,16 @@ pointer-events:none;user-select:none;backdrop-filter:blur(6px);transition:opacit
 #backTop{position:fixed;right:24px;bottom:24px;width:44px;height:44px;border-radius:50%;
 background:var(--sbBg);color:var(--goldL);border:1px solid var(--gold);font-size:20px;cursor:pointer;
 z-index:120;display:none;align-items:center;justify-content:center;}
+#wyVideoFab{position:fixed;right:24px;bottom:80px;z-index:121;display:none;align-items:center;gap:7px;
+font-family:"Noto Sans TC",sans-serif;font-size:14px;font-weight:500;letter-spacing:2px;color:#fff;
+text-decoration:none;padding:10px 18px;border-radius:26px;
+background:linear-gradient(135deg,#8b5e3c,#b8860b);border:1px solid rgba(184,134,11,.6);
+box-shadow:0 4px 16px rgba(91,58,41,.32);transition:all .2s;}
+#wyVideoFab:hover{background:linear-gradient(135deg,#b8860b,#d4a84b);
+box-shadow:0 6px 22px rgba(184,134,11,.5);transform:translateY(-2px);}
+#wyVideoFab .tv-ico{font-size:11px;line-height:1;}
+#wyVideoFab.show{display:inline-flex;}
+@media(max-width:900px){#wyVideoFab{right:16px;bottom:74px;font-size:13px;padding:9px 15px;letter-spacing:1px;}}
 .site-footer{background:var(--headGrad);color:rgba(247,243,236,.7);text-align:center;
 padding:38px 24px;margin-top:48px;font-size:15px;letter-spacing:1px;line-height:1.9;}
 @media(max-width:900px){
@@ -527,8 +537,10 @@ padding:38px 24px;margin-top:48px;font-size:15px;letter-spacing:1px;line-height:
 <section class="site-footer"><p data-wytext="kt2KgvjAjdPCncfjTu+GEsj7hpL0rIDb9kir01WF8uXIua/I5bCTwYCCy/qO2saS0vCGsa3dkf7W29XJ3OGf++iM8t+SwoHUv6yTtNycvuWOxuGK5PWFy+PLmYvF+Zif74SN4dpIq9NVicviypaUxMWYkeiEg9//jNLkncHa"></p></section>
 <div data-wy-notice="v2" style="margin:0;padding:26px 20px;background:#1e1a14;border-top:2px solid #b8860b;text-align:center;font-family:'Noto Sans TC','Microsoft JhengHei',sans-serif;font-size:13px;line-height:1.9;color:#c4a76c;letter-spacing:1px;"><div style="max-width:760px;margin:0 auto;">本文為個人研讀彙整，歡迎轉發結緣；轉發請保留連結與作者頻道 <a href="https://www.youtube.com/@Chengweiwen/posts" rel="noopener" style="color:#d4a84b;text-decoration:none;border-bottom:1px dotted #b8860b;margin:0 4px;" target="_blank">https://www.youtube.com/@Chengweiwen/posts</a>。<br/>願以此功德，普及於一切；<br/>我等與眾生，皆共成佛道。</div></div>
 </main>
+<a aria-label="本品影音說明" class="wy-vfab" href="#" id="wyVideoFab" rel="noopener" target="_blank"><span class="tv-ico">▶</span> <span class="wy-vfab-tx" data-wytext="keWBgfL7jdTVnPPG"></span></a>
 <button aria-label="回到頂部" id="backTop">↑</button>
 <script>
+var WY_YT=["https://youtu.be/z_Sckzmb_5M","https://youtu.be/Uv-qGaRvmgQ","https://youtu.be/KJP_nGoDNBY","https://youtu.be/MAduozdlfRI","https://youtu.be/zxF9IzUWhM4","https://youtu.be/9sMkNVJRegk","https://youtu.be/RLMSCbFGvTE","https://youtu.be/qbXhBQ39y9M","https://youtu.be/dhF862h_34o","https://youtu.be/gKVFYMipcRA","https://youtu.be/QQHWmIidGG8","https://youtu.be/cl3Zmc3to3Y","https://youtu.be/rFrZgXidCqE","https://youtu.be/2JFbKx57B9Y","https://youtu.be/V0gYiqvYw9g","https://youtu.be/ADlnts-DMTE","https://youtu.be/AOkq1_EV_FI","https://youtu.be/o9upQQY8i5k"];
 (function(){
 var blk=function(e){e.preventDefault();return false;};
 ['contextmenu','copy','cut','selectstart','dragstart'].forEach(function(ev){document.addEventListener(ev,blk,true);});
@@ -580,6 +592,8 @@ var items=Array.prototype.slice.call(document.querySelectorAll('.sb-item'));
 function highlight(){var idx=-1;for(var i=0;i<secs.length;i++){
 if(secs[i].getBoundingClientRect().top<window.innerHeight*0.35)idx=i;}
 items.forEach(function(it,i){it.classList.toggle('active',i===idx);});
+var fab=document.getElementById('wyVideoFab');
+if(fab){if(idx>=0&&WY_YT[idx]){fab.href=WY_YT[idx];fab.classList.add('show');}else{fab.classList.remove('show');}}
 if(idx>=0&&items[idx]){var r=items[idx].getBoundingClientRect();
 if(r.top<70||r.bottom>window.innerHeight-20){items[idx].scrollIntoView({block:'center'});}}}
 window.addEventListener('scroll',highlight,{passive:true});highlight();
