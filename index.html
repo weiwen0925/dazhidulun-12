@@ -837,4 +837,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C12P2:END-->
+<!--WY-C12P3:BEGIN-->
+<style id="wy-c12p3-css">
+.c12p3-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c12p3-fabbox.show{display:block;}
+.c12p3-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c12p3-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c12p3-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c12p3-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c12p3-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c12p3-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c12p3-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c12p3-modal.open{display:flex;}
+.c12p3-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c12p3-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c12p3-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c12p3-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c12p3-close:hover{background:#e3d5b8;}
+.c12p3-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c12p3-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c12p3-tbl th,.c12p3-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c12p3-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c12p3-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c12p3-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c12p3-tbl b{color:#8b2500;}
+.c12p3-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c12p3-note b{color:#8b2500;}
+@media(max-width:900px){.c12p3-fabbox{right:14px;}.c12p3-tbl{font-size:11.5px;}.c12p3-card{padding:26px 14px 16px;}}
+</style>
+<div class="c12p3-fabbox" id="c12p3Box"><button class="c12p3-btn" id="c12p3Btn" type="button" aria-label="開啟全景總表"><span class="c12p3-ic">▦</span><span class="c12p3-ls"><span class="c12p3-l1">本品 · 檀波羅蜜滿之哲學解構</span><span class="c12p3-l2">二種身 · 由忍到化 · 見地徹底性</span></span></button></div><div class="c12p3-modal" id="c12p3Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c12p3-card"><button class="c12p3-close" id="c12p3Close" type="button" aria-label="關閉">×</button><h3>卷十二·第三品 檀波羅蜜滿之哲學解構 · 全景總表</h3><p class="sub">卷十二・第三品｜結業生身vs法身・難捨能捨階梯・如棄草木借假修真・六牙白象・滿在見地</p><table class="c12p3-tbl"><caption>一、二種身·由忍到化（本品主骨架）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>總綱</td><td>「菩薩有二種身：一者結業生身，二者法身。是二種身中檀波羅蜜滿，是名具足檀波羅蜜」——把「滿」掛在身的本體差異上</td></tr><tr><td>結業生身</td><td>由結（煩惱）＋業所感，受生死果報限制；結使未盡、有肉身極限與痛覺；布施之「滿」＝難捨能捨、心不動轉（關鍵字：<b>忍</b>）</td></tr><tr><td>法身</td><td>菩薩末後肉身證無生法忍後所轉；不受結業所拘、能於十方六道隨類變現；布施之「滿」＝無施者受者施物三輪俱空的遊戲（關鍵字：<b>化</b>）</td></tr><tr><td>核心命題</td><td>「滿」不在事相多寡，而在見地的徹底性——同是捨頭目髓腦國財妻子，若心執「我在施、此我所施、彼受我施」便落有所得；唯觀所施物「從緣有、推求都無所得、如涅槃相」方為真滿</td></tr></tbody></table><table class="c12p3-tbl"><caption>二、結業生身·難捨能捨的遞進階梯（此岸的空性運作）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>核心張力</td><td>有限的身要承擔無限的捨——肉身會痛會死會被愛憎縛，而所立願是「內外所有盡以布施」；修行即在此落差中讓心先超越身</td></tr><tr><td>須提拏太子</td><td>以二子布施婆羅門、次以妻施而心不轉——破最深的「情愛之執」（難處不在行為而在「心不轉」的內在不動）</td></tr><tr><td>薩婆達王</td><td>國破家亡藏竄窮林，仍愍遠來婆羅門無所得，自縛以身施之送與新王——破「生存之執」（發心純為愍其辛苦）</td></tr><tr><td>月光太子</td><td>癩人須「無瞋之人血髓」，太子命破骨出髓以塗、以血飲之——破「痛覺與身命之執」（同時印證自身已達無瞋，慈悲壓倒本能）</td></tr><tr><td>如棄草木</td><td>「身及妻子，施而無悋，如棄草木」——把最珍愛之物視同棄置草木，非冷漠而是把貪愛黏著力抽離，使「心不動轉」成為可能（借假修真）</td></tr></tbody></table><table class="c12p3-tbl"><caption>三、法身菩薩·空性遊戲（彼岸的空性起用）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>變身應化</td><td>末後肉身得無生法忍、捨肉身得法身；於十方六道變身應化以化眾生，種種珍寶衣服飲食給施一切</td></tr><tr><td>六牙白象本生</td><td>釋迦曾為六牙白象，獵者毒箭射之，象反以身捍護、愍之如子，自以六牙內石孔中血肉俱出授獵者——「阿羅漢法中都無此心，當知此為法身菩薩」</td></tr><tr><td>迦頻闍羅鳥本生</td><td>菩薩化鳥，與象、獼猴以必鉢羅樹論長幼，共行恭敬長老；禽獸受化皆行禮敬不侵不害，化流萬世——以身教化眾生的法身妙用</td></tr><tr><td>一時無數化身</td><td>法身菩薩一時之頃化作無央數身供養十方佛、化無量財寶給足眾生、隨一切上中下聲普為說法——空活成妙有的隨類應化</td></tr><tr><td>借假修真總持</td><td>結業生身以「觀緣生故空」逼近無生法忍（此岸空性運作）、法身菩薩把「空」活成「妙有」（彼岸空性遊戲）——同一空性見在不同證量上的展開</td></tr></tbody></table><p class="c12p3-note">第三品把「檀波羅蜜滿」掛在「二種身」的本體差異上，構成一條「由忍到化、由捨到遊」的辯證：結業生身以有限肉身承擔無限的捨，關鍵在「忍」（心不動轉）；法身菩薩身既如幻、施亦如幻，故能於布施中無所罣礙地遊戲。核心命題一句收攝——<b>淺深之別不在所捨之物，而在能捨之心是否徹見空性</b>。須提拏、薩婆達、月光三例層層逼近肉身邊界，其「如棄草木」的抽離心，正是「觀所施物知從緣有」的借假修真。</p></div></div>
+<script id="wy-c12p3-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c12p3Btn"),BOX=document.getElementById("c12p3Box"),MODAL=document.getElementById("c12p3Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=2;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#wyVideoFab,.wy-vfab,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c12p3Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C12P3:END-->
 </body></html>
