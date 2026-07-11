@@ -2408,4 +2408,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH12P6:END-->
+<!--WY-BH12P7:BEGIN-->
+<style id="wy-bh12p7-css">
+.bh12p7-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh12p7-fabbox.show{display:block;}
+.bh12p7-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh12p7-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh12p7-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh12p7-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh12p7-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh12p7-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh12p7-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh12p7-modal.open{display:flex;}
+.bh12p7-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh12p7-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh12p7-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh12p7-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh12p7-close:hover{background:#dde2e6;}
+.bh12p7-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh12p7-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh12p7-tbl th,.bh12p7-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh12p7-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh12p7-tbl thead th:nth-child(1){width:32%;}.bh12p7-tbl thead th:nth-child(2){width:41%;}.bh12p7-tbl thead th:nth-child(3){width:27%;}
+.bh12p7-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh12p7-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh12p7-guan{background:#eef2f5;color:#37505f;}
+.bh12p7-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh12p7-tbl tbody tr:nth-child(even) td.bh12p7-guan{background:#e8eef2;}
+.bh12p7-tbl tbody tr:nth-child(even) td.bh12p7-qa{background:#e7ecdb;}
+.bh12p7-tbl b{color:#8b2500;}
+.bh12p7-guan b{color:#2f6b5a;}
+.bh12p7-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh12p7-note b{color:#8b2500;}
+@media(max-width:900px){.bh12p7-fabbox{right:14px;}.bh12p7-tbl{font-size:11px;}.bh12p7-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh12p7-fabbox" id="bh12p7Box"><button class="bh12p7-btn" id="bh12p7Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh12p7-ic">譯</span><span class="bh12p7-ls"><span class="bh12p7-l1">本品 · 原文·白話·中觀</span><span class="bh12p7-l2">白話翻譯表</span></span></button></div><div class="bh12p7-modal" id="bh12p7Modal" role="dialog" aria-modal="true"><div class="bh12p7-card"><button class="bh12p7-close" id="bh12p7Close" type="button" aria-label="關閉">×</button><h3>卷十二 · 第7品 白話翻譯表（般若空相與檀波羅蜜）</h3><p class="sub">大智度論卷十二·般若空相與檀波羅蜜 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh12p7-tbl"><caption>般若空相與檀波羅蜜 · 原文｜白話翻譯｜中觀概念（共8段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh12p7-src">云何施人不可得？</td><td>要如何說明「布施的人」是不可得（找不到實體）的呢？</td><td class="bh12p7-guan"><b>破題設問——三輪之首</b>——此問直接叩問「施者」（布施主體）的實有性，是三輪體空（施者、受者、施物皆空）論述中率先被拆解的第一輪，為下文「疊」與「四大圍虛空」之喻預留伏筆。</td></tr><tr><td class="bh12p7-src">如疊因緣和合故有，分分推之，疊不可得。施者亦如是，四大圍虛空，名為身，是身識動作來往坐起，假名為人。分分求之，亦不可得。</td><td>就像一匹布疋，是由各種因緣和合才有的（並非本來就存在），如果一層層去推究拆解，最終布疋本身是找不到一個真實不變的實體的。布施的人也是同樣的道理：地水火風四大元素包圍著虛空，這才稱作「身體」；而這個身體因為心識的作用而有動作、來往、坐下、起身等行為，才假名安立為「人」。如果一層層去推求，同樣也找不到一個真實的「人」存在。</td><td class="bh12p7-guan"><b>「疊」喻——物無實自性</b>——以日常最熟悉的布疋為例，示範「因緣和合而有」的一切法經層層分析後終究「不可得」；布施者（人）的身體亦不過是四大與心識假合的產物，並無獨立自存的實體，此為三輪體空中「施者空」的物理層論證。</td></tr><tr><td class="bh12p7-src">復次，一切眾、界、入中，我不可得；我不可得故，施人不可得。何以故？我，有種種名字：人、天，男、女，施人、受人，受苦人、受樂人，畜生等；是但有名，而實法不可得。</td><td>再者，在五蘊、十八界、十二入這一切分類當中，都找不到一個真實的「我」；因為找不到「我」，所以「布施的人」也就找不到了。這是為什麼呢？因為「我」只是有種種不同的名字稱呼：人、天、男、女、布施者、受施者、受苦的人、受樂的人、畜生等等；這些都只是名稱上的安立，並沒有一個真實不變的東西與之相應。</td><td class="bh12p7-guan"><b>五蘊十八界十二入遍求我不可得</b>——將「施者不可得」的論證從「疊喻」的物理層面提升到佛法對存在的完整分類（蘊、界、入）；於此三者中遍求「我」皆不可得，顯示「施人」一詞所依附的主體，從根本的存在論分類上就找不到立足點，只是名言假立。</td></tr><tr><td class="bh12p7-qa">問曰：若施者不可得，云何有菩薩行檀波羅蜜？</td><td>問：如果說「布施的人」是找不到、不存在的，那麼菩薩又怎麼能夠修行布施波羅蜜呢？</td><td class="bh12p7-guan"><b>假名有與實法無之詰難</b>——這是典型的「二諦」詰難：若勝義諦上施者不可得（畢竟空），世俗諦上菩薩行布施之善行如何能夠成立？此問直接逼出下文「因緣和合假名有」的二諦圓融解答。</td></tr><tr><td class="bh12p7-qa">答曰：因緣和合故有名字，如屋、如車，實法不可得。</td><td>答：因為因緣和合的緣故，才有「布施者」這樣的名稱安立，就好比「房屋」、「車子」這些名稱一樣（都是因緣和合的假名），並沒有一個真實不變的實體存在。</td><td class="bh12p7-guan"><b>屋車之喻——假名有・實法空</b>——以「屋」「車」二喻總持二諦圓融的核心：世俗諦上因緣和合可以「有名字」（假名安立，行布施之善行得以成立）；勝義諦上這些名字所指並無「實法」（畢竟空），二者不相妨礙，此即中觀「即假即空」的根本立場。</td></tr><tr><td class="bh12p7-qa">問曰：云何我不可得？</td><td>問：要如何說明「我」是不可得（找不到、不存在）的呢？</td><td class="bh12p7-guan"><b>從物理轉向認知——析心模組之問</b>——承接「施者不可得」的物理層論證，此問將焦點轉向更深層的認知主體「我」，開啟以六識系統逐一檢驗「我」是否可得的析心分析。</td></tr><tr><td class="bh12p7-qa">答曰：如上「我聞一時」中已說，今當更說。佛說六識：眼識及眼識相應法，共緣色，不緣屋舍、城郭種種諸名。耳、鼻、舌、身識，亦如是。意識及意識相應法，知眼、知色、知眼識，乃至知意、知法、知意識。是識所緣法，皆空無我，生滅故，不自在故。</td><td>答：如同前面〈如是我聞一時〉一段中已經說過的，現在再更進一步說明。佛陀說有六種識：眼識以及與眼識相應的心所法，只共同攀緣色（單純的物質屬性），並不攀緣屋舍、城郭這一類複合的名相概念。耳識、鼻識、舌識、身識，也是同樣的道理。意識以及與意識相應的心所法，能夠了知眼根、了知色境、了知眼識，乃至了知意根、了知法境、了知意識本身。這些識所攀緣的一切法，全都是空、沒有一個真實的「我」，因為它們都是剎那生滅的、不能自主自在的。</td><td class="bh12p7-guan"><b>六識遍緣皆空無我——生滅・不自在二義</b>——以佛陀親說的六識系統逐一檢驗：前五識只緣純粹物理屬性、不緣複合名相，第六意識雖能統整卻仍剎那生滅；判準收攝為「生滅故」（無常，不具恆常性）與「不自在故」（緣起，不具主宰性）二義，二者皆備則「我」無可安立，是全論常用的無我論證公式。</td></tr><tr><td class="bh12p7-src">無為法中亦不計我，苦樂不受故。是中若強有我法，應當有第七識識我；而今不爾，以是故知無我。</td><td>在無為法（不生不滅之法）當中，也不應計執有一個「我」，因為無為法不會領受苦或樂的緣故。這當中如果硬要說有一個「我」這樣的法存在，那麼理應要有一個「第七識」專門去了知、識別這個「我」；然而事實上並沒有這樣的第七識存在，因此可以知道並沒有一個真實的「我」。</td><td class="bh12p7-guan"><b>雙重歸謬——無為法不受苦樂／第七識子虛烏有</b>——先破：若我存在於無為法中，無為法不受苦樂，然眾生實有苦樂交替，故我不在無為法中；再破：佛僅說六識，若強立實我，理應別有一「第七識」專司識我，而此識實不可得，以歸謬法徹底堵死「我」在生滅法與無為法兩端安立的可能。</td></tr></tbody></table><p class="bh12p7-note">卷十二第7品「般若空相與檀波羅蜜」原文·白話·中觀三欄對照，以「施人不可得」與「我不可得」雙軌開展：疊喻、四大圍虛空喻層層拆解施者色身之實有；六識分析與第七識歸謬徹底堵死實我假說之門；終以「因緣和合故有名字，如屋、如車，實法不可得」二諦圓融一句，總持假名有與畢竟空不相妨礙之理。白話忠於原意、不增不減；中觀欄標出各段所涉義理。</p></div></div>
+<script id="wy-bh12p7-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh12p7Btn"),BOX=document.getElementById("bh12p7Box"),MODAL=document.getElementById("bh12p7Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=6;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c12p7Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh12p7Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH12P7:END-->
 </body></html>
