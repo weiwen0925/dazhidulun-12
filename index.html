@@ -2510,4 +2510,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH12P8:END-->
+<!--WY-BH12P9:BEGIN-->
+<style id="wy-bh12p9-css">
+.bh12p9-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh12p9-fabbox.show{display:block;}
+.bh12p9-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh12p9-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh12p9-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh12p9-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh12p9-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh12p9-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh12p9-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh12p9-modal.open{display:flex;}
+.bh12p9-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh12p9-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh12p9-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh12p9-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh12p9-close:hover{background:#dde2e6;}
+.bh12p9-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh12p9-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh12p9-tbl th,.bh12p9-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh12p9-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh12p9-tbl thead th:nth-child(1){width:32%;}.bh12p9-tbl thead th:nth-child(2){width:41%;}.bh12p9-tbl thead th:nth-child(3){width:27%;}
+.bh12p9-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh12p9-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh12p9-guan{background:#eef2f5;color:#37505f;}
+.bh12p9-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh12p9-tbl tbody tr:nth-child(even) td.bh12p9-guan{background:#e8eef2;}
+.bh12p9-tbl tbody tr:nth-child(even) td.bh12p9-qa{background:#e7ecdb;}
+.bh12p9-tbl b{color:#8b2500;}
+.bh12p9-guan b{color:#2f6b5a;}
+.bh12p9-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh12p9-note b{color:#8b2500;}
+@media(max-width:900px){.bh12p9-fabbox{right:14px;}.bh12p9-tbl{font-size:11px;}.bh12p9-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh12p9-fabbox" id="bh12p9Box"><button class="bh12p9-btn" id="bh12p9Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh12p9-ic">譯</span><span class="bh12p9-ls"><span class="bh12p9-l1">本品 · 原文·白話·中觀</span><span class="bh12p9-l2">白話翻譯表</span></span></button></div><div class="bh12p9-modal" id="bh12p9Modal" role="dialog" aria-modal="true"><div class="bh12p9-card"><button class="bh12p9-close" id="bh12p9Close" type="button" aria-label="關閉">×</button><h3>卷十二 · 第9品 白話翻譯表（拆解神我）</h3><p class="sub">大智度論卷十二·拆解神我 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh12p9-tbl"><caption>拆解神我 · 原文｜白話翻譯｜中觀概念（共12段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh12p9-src">復次，是我實性，決定不可得。若常相、非常相，自在相、不自在相，作相、不作相，色相、非色相，如是等種種皆不可得。若有相則有法，無相則無法，我今無相，則知無我。</td><td>再者，這個所謂「我」的真實體性，是絕對找不到的。無論是恆常之相、無常之相，自在之相、不自在之相，能造作之相、不能造作之相，有形色之相、無形色之相，像這樣種種的相狀，通通都找不到（與「我」相應）。如果有一個「相」，就表示有這個法存在；如果沒有相，就表示沒有這個法。我現在遍求「我」的一切相狀都不可得，由此就可以知道並沒有一個真實的「我」。</td><td class="bh12p9-guan"><b>遍求諸相不可得——存在的判準</b>——以「有相則有法，無相則無法」作為判斷存在與否的根本判準，遍歷常、無常、自在、不自在、作、不作、色、非色八種可能的相狀，逐一檢驗「我」是否具備其中任何一種，結果盡皆不可得，故從邏輯上判定「我」不存在，是本品展開歸謬論證的總綱。</td></tr><tr><td class="bh12p9-src">若我是常，不應有殺罪。何以故？身可殺，非常故；我不可殺，常故。</td><td>如果說「我」是恆常不變的，那麼就不應該有所謂的「殺生之罪」。這是為什麼呢？因為身體是可以被殺害的，因為它是無常的；而「我」是不能被殺害的，因為它（假設）是恆常的。</td><td class="bh12p9-guan"><b>倫理歸謬第一擊——常我則無殺罪</b>——從最貼近生活的「殺罪」問題切入歸謬：若我恆常不滅，則所殺的只是無常的身體，恆常的「我」根本不受影響、無所謂被殺，那麼殺生之罪從何安立？此一詰問直搗「常我論」在倫理實踐上的荒謬後果。</td></tr><tr><td class="bh12p9-qa">問曰：我雖常故不可殺，但殺身則有殺罪。</td><td>問：雖然說「我」因為恆常的緣故不能被殺，但是殺害身體這件事情本身，仍然是有殺罪的呀。</td><td class="bh12p9-guan"><b>常我論者的補救——身罪與我罪的切割</b>——對方試圖以「身」與「我」二分的方式補救常我論：承認我不可殺，但主張殺罪僅就「身」而立，藉此迴避「常我則無殺罪」的詰難，此一補救策略隨即在下文被進一步拆解。</td></tr><tr><td class="bh12p9-qa">答曰：若殺身有殺罪者，《毘尼》中言：「自殺無殺罪。」罪福從惱他益他生，非自供養身、自殺身故有罪有福。以是故《毘尼》中言：「自殺身無殺罪，有愚癡、貪欲、瞋恚之咎。」</td><td>答：如果說殺害身體就會有殺罪的話，那麼《毘尼》（戒律）當中卻說：「自殺是沒有殺罪的。」罪與福是從惱害他人、利益他人這兩種行為而產生的，並不是從供養自己的身體、或殺害自己的身體這件事本身而產生罪或福的。因此《毘尼》中才會說：「自殺身體並沒有殺罪，只不過會有愚癡、貪欲、瞋恚這些過失。」</td><td class="bh12p9-guan"><b>律藏判例——罪福繫於損益他人，非關身之殺否</b>——引《毘尼》「自殺無殺罪」的實際判例反駁：若殺罪純粹依「身」而立，自殺同樣殺身，理應同罪，然戒律明文自殺無殺罪，可見罪福的判準其實在於「惱他／益他」，與身之可殺與否根本無關，徹底瓦解對方「身罪我不罪」的補救策略。</td></tr><tr><td class="bh12p9-src">若神常者，不應死，不應生。何以故？汝等法神常，一切遍滿五道中，云何有死生？死名此處失，生名彼處出。以是故，不得言神常。</td><td>如果「神我」是恆常不變的，那麼就不應該有死、也不應該有生。這是為什麼呢？照你們的說法，神我是恆常的、遍滿在五道（天、人、畜生、餓鬼、地獄）一切處的，那又怎麼會有死、有生呢？所謂「死」，指的是在此處消失；所謂「生」，指的是在彼處出現。因此，不能夠說「神我是恆常的」。</td><td class="bh12p9-guan"><b>存有論歸謬之一——遍滿與死生的矛盾</b>——若神我恆常遍滿五道，則不應有「此處失、彼處出」的死生現象；然眾生流轉生死乃現前可見的事實，可見「神我遍滿恆常」的假設與「有死有生」的事實直接矛盾，此為對「常我」最直接的存有論反駁。</td></tr><tr><td class="bh12p9-src">若神常者，亦應不受苦樂。何以故？苦來則憂，樂至則喜，若為憂喜所變者，則非常也。</td><td>如果「神我」是恆常不變的，那麼也應該不會領受苦或樂。這是為什麼呢？因為痛苦來臨就會憂愁，快樂到來就會歡喜，如果會被憂愁、歡喜這些情緒所轉變、影響，那就不是恆常不變的了。</td><td class="bh12p9-guan"><b>存有論歸謬之二——苦樂憂喜的變易性</b>——恆常者定義上不應隨外境而變易，然眾生明明隨苦樂而生憂喜，情緒的起伏正是「被改變」的鐵證；若神我真恆常不變，理應如如不動、不為苦樂所動搖，此與現實經驗明顯相違。</td></tr><tr><td class="bh12p9-src">若常，應如虛空，雨不能濕，熱不能乾，亦無今世、後世。</td><td>如果真是恆常不變的話，那應該就要像虛空一樣，雨水無法把它淋濕，熱氣也無法把它烤乾，而且也不應該有今生、來世的分別。</td><td class="bh12p9-guan"><b>虛空喻——真正恆常者的判準</b>——以「虛空不為雨濕、不為熱乾」作為「真恆常」的具體判準：虛空不受外緣影響、不生變化，也無今世後世的分位差別；以此反觀「神我」明明受苦樂所動、又有今生來世的流轉，可知其恆常之說難以成立。</td></tr><tr><td class="bh12p9-src">若神常者，亦不應有後世生、今世死。</td><td>如果「神我」是恆常不變的，那麼也不應該有「來世投生、今生死亡」這樣的事情發生。</td><td class="bh12p9-guan"><b>存有論歸謬之三——今生後世的時間分位</b>——延續「遍滿恆常者不應有死生」的論式，進一步從「今世／後世」的時間分位切入：恆常者應超越時間分位的變化，若神我恆常，則「今世死、後世生」這種時間性的轉換便不應存在，然此正是眾生流轉的基本樣態，故神我恆常之說再度受挫。</td></tr><tr><td class="bh12p9-src">若神常者，則常有我見，不應得涅槃。</td><td>如果「神我」是恆常不變的，那麼就會永遠存在著「我見」（執著有我的見解），如此一來就不應該能夠證得涅槃。</td><td class="bh12p9-guan"><b>解脫論歸謬之一——常我見障礙涅槃</b>——涅槃的證得，前提是斷除我見；若神我恆常存在，則我見亦將恆常隨附而不可斷除，如此便永無證得涅槃之可能，然而佛法明言解脫可證，故「神我恆常」之說與解脫論根本相違。</td></tr><tr><td class="bh12p9-src">若神常者，則無起無滅，不應有忘失；以其無神，識無常故，有忘有失，是故神非常也！</td><td>如果「神我」是恆常不變的，那麼就應該沒有生起、沒有消滅，也就不應該有遺忘、失去記憶這樣的事情；正因為並沒有一個恆常的「神我」，而心識是無常變化的緣故，所以才會有遺忘、有失去記憶的情形發生，因此可以知道「神我」並不是恆常的。</td><td class="bh12p9-guan"><b>解脫論歸謬之二——從忘失反證識無常</b>——以「遺忘」這個尋常心理現象作為反證：恆常者不應有起滅變化，若神我恆常則記憶理應恆存而不應遺忘；然人皆有忘失經驗，正好證明能記憶者（識）是剎那生滅、無常變化的，並非有一個恆常不變的神我在背後支撐記憶。</td></tr><tr><td class="bh12p9-src">如是等種種因緣，可知神非常相。</td><td>由於以上這種種的道理與例證，就可以知道「神我」並不具有恆常不變的相狀。</td><td class="bh12p9-guan"><b>「非常」總結</b>——收束前述倫理（殺罪）、存有論（死生、苦樂、時間分位）、解脫論（涅槃、忘失）多重維度的歸謬論證，總結判定神我不具「常相」，為下文轉向「神我是否為無常」的另一端辯證預作鋪墊。</td></tr><tr><td class="bh12p9-src">若神無常相者，亦無罪無福。若身無常，神亦無常，二事俱滅，則墮斷滅邊。墮斷滅，則無到後世受罪福者。若斷滅，則得涅槃不須斷結，亦不用後世罪福因緣。如是等種種因緣，可知神非無常。</td><td>如果說「神我」是具有無常之相的，那麼同樣也就沒有所謂的罪、也沒有所謂的福了。如果身體是無常的，神我也同樣是無常的，那麼身與神兩者都會一起消滅，這樣就墮入了「斷滅」的一邊。一旦墮入斷滅，就沒有一個能夠到後世去承受罪報或福報的主體了。如果是徹底斷滅的話，那麼要證得涅槃也就不需要斷除煩惱結使了，也用不著考慮後世罪福因緣的問題了。由於以上這種種的道理，也可以知道「神我」並不是無常的。</td><td class="bh12p9-guan"><b>「非無常」——不落斷滅邊的中道</b>——若逕直主張神我純屬無常斷滅，則同樣導致「無人承受後世罪福」「涅槃不必斷惑」等荒謬後果，落入「斷滅見」的另一極端；至此「常」與「（斷滅義的）無常」兩端皆被歸謬否定，正顯示大智度論一貫「不常不斷、緣起中道」的核心立場，為神我論爭畫下中觀式的收束。</td></tr></tbody></table><p class="bh12p9-note">卷十二第9品「拆解神我」原文·白話·中觀三欄對照，以「有相則有法，無相則無法」為總綱，先以殺罪倫理、律藏判例破「常我」，繼以遍滿死生、苦樂憂喜、時間分位、涅槃忘失等存有論解脫論歸謬層層擊破「神我恆常」；再以斷滅過失破「神我斷滅」，兩端俱遣，收束於大智度論一貫「不常不斷、緣起中道」之立場。白話忠於原意、不增不減；中觀欄標出各段所涉義理。</p></div></div>
+<script id="wy-bh12p9-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh12p9Btn"),BOX=document.getElementById("bh12p9Box"),MODAL=document.getElementById("bh12p9Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=8;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c12p9Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh12p9Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH12P9:END-->
 </body></html>
