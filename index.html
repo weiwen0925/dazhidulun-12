@@ -2561,4 +2561,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH12P9:END-->
+<!--WY-BH12P10:BEGIN-->
+<style id="wy-bh12p10-css">
+.bh12p10-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh12p10-fabbox.show{display:block;}
+.bh12p10-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh12p10-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh12p10-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh12p10-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh12p10-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh12p10-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh12p10-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh12p10-modal.open{display:flex;}
+.bh12p10-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh12p10-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh12p10-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh12p10-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh12p10-close:hover{background:#dde2e6;}
+.bh12p10-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh12p10-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh12p10-tbl th,.bh12p10-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh12p10-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh12p10-tbl thead th:nth-child(1){width:32%;}.bh12p10-tbl thead th:nth-child(2){width:41%;}.bh12p10-tbl thead th:nth-child(3){width:27%;}
+.bh12p10-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh12p10-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh12p10-guan{background:#eef2f5;color:#37505f;}
+.bh12p10-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh12p10-tbl tbody tr:nth-child(even) td.bh12p10-guan{background:#e8eef2;}
+.bh12p10-tbl tbody tr:nth-child(even) td.bh12p10-qa{background:#e7ecdb;}
+.bh12p10-tbl b{color:#8b2500;}
+.bh12p10-guan b{color:#2f6b5a;}
+.bh12p10-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh12p10-note b{color:#8b2500;}
+@media(max-width:900px){.bh12p10-fabbox{right:14px;}.bh12p10-tbl{font-size:11px;}.bh12p10-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh12p10-fabbox" id="bh12p10Box"><button class="bh12p10-btn" id="bh12p10Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh12p10-ic">譯</span><span class="bh12p10-ls"><span class="bh12p10-l1">本品 · 原文·白話·中觀</span><span class="bh12p10-l2">白話翻譯表</span></span></button></div><div class="bh12p10-modal" id="bh12p10Modal" role="dialog" aria-modal="true"><div class="bh12p10-card"><button class="bh12p10-close" id="bh12p10Close" type="button" aria-label="關閉">×</button><h3>卷十二 · 第10品 白話翻譯表（無我與業果的中道辯證）</h3><p class="sub">大智度論卷十二·無我與業果的中道辯證 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh12p10-tbl"><caption>無我與業果的中道辯證 · 原文｜白話翻譯｜中觀概念（共7段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh12p10-src">若神自在相、作相者，則應隨所欲得皆得；今所欲更不得，非所欲更得。若神自在，亦不應有作惡行，墮畜生惡道中。</td><td>如果「神我」具有自在之相、能夠自由造作，那麼凡是它想要得到的，就應該都能得到；可是現實中，想要的東西偏偏得不到，不想要的東西卻偏偏發生了。如果神我真是自在的，也不應該去造作惡行，以致墮入畜生惡道之中。</td><td class="bh12p10-guan"><b>自在義的定義性檢驗</b>——以「所欲皆得、所不欲皆免」作為「自在」一詞的操作型定義，並用「墮惡道」這一具體反例直接檢驗神我是否符合此定義，是全品歸謬論證的起手式。</td></tr><tr><td class="bh12p10-src">復次，一切眾生皆不樂苦，誰當好樂而更得苦？以是故，知神不自在，亦不作。</td><td>再者，一切眾生沒有人喜歡受苦，有誰是喜好苦而還去招致苦果的呢？由此可知，神我並不自在，也不是（能隨心所欲地）造作一切的。</td><td class="bh12p10-guan"><b>趨樂避苦的普遍事實</b>——以眾生「無不厭苦」的共同經驗為前提，逆推「若真自在，不應招苦」，用生活化的常識強化第一段的歸謬。</td></tr><tr><td class="bh12p10-src">又如人畏罪故，自強行善，若自在者，何以畏罪而自強修福？</td><td>又譬如人因為害怕罪業而勉強自己去行善，如果神我真是自在的，又何必畏懼罪業，還要勉強自己去修福呢？</td><td class="bh12p10-guan"><b>畏罪修福的心理現象</b>——從「畏懼」與「勉強」這兩種心理狀態切入：真正自在者不應有所畏、不應需要勉強，然而人人皆有此經驗，故反證自在之說難以成立。</td></tr><tr><td class="bh12p10-src">又諸眾生不得如意，常為煩惱愛縛所牽。</td><td>而且眾生的境遇經常不能稱心如意，時時被煩惱與愛欲的繫縛所牽引、拖著走。</td><td class="bh12p10-guan"><b>煩惱愛縛的現實觀察</b>——直接指出眾生的真實生存狀態是「被煩惱愛縛牽引」而非「自主操控」，作為前三段歸謬之後的總結性事實佐證。</td></tr><tr><td class="bh12p10-src">如是等種種因緣，知神不自在、不自作。</td><td>由於以上這種種的道理，可以知道神我並不是自在的，也不是（能隨意）造作一切的。</td><td class="bh12p10-guan"><b>「破」的階段性總結</b>——收束前四段歸謬，正式判定「神不自在、不自作」，完成本品「破主宰」的第一階段任務。</td></tr><tr><td class="bh12p10-src">若神不自在、不自作者，是為無神相，言我者，即是六識，更無異事。</td><td>如果神我既不自在、又不能造作，那麼就等於沒有一個真實的「神我之相」存在；所謂的「我」，其實就只是六識（眼、耳、鼻、舌、身、意六種認識作用）罷了，並沒有另外一個別的東西存在。</td><td class="bh12p10-guan"><b>以六識替代神我的本體論轉向</b>——「破」之後隨即「立」：既然神我之相不可得，便將「我」重新定義為六識的運作，以「功能性歷程」取代「實體性主宰」，是中觀「破而不廢、立於緣起」的典型手法。</td></tr><tr><td class="bh12p10-src">復次，若不作者，云何閻羅王問罪人：『誰使汝作此罪者？』罪人答言：『是我自作。』以是故，知非不自作。</td><td>再者，如果說「（無神我便）沒有造作者」，那麼閻羅王在審問罪人時，為什麼會問：「是誰指使你造下這個罪業的？」而罪人回答說：「是我自己造的。」由此可知，並不是「沒有造作」（業確實是自己所造的）。</td><td class="bh12p10-guan"><b>閻羅王問罪之喻——業由自作的倫理確證</b>——以審判情境中「罪人自承己過」的日常倫理直覺，反證縱然無恆常神我，「自作自受」的業果責任依然成立，正式為「非不自作」立宗，與破神我恆常並不矛盾，收束全品「破立雙成」的中道結構。</td></tr></tbody></table><p class="bh12p10-note">卷十二第10品「無我與業果的中道辯證」原文·白話·中觀三欄對照，以七段因緣推論為據：先以欲求矛盾、趨樂避苦、畏罪修福三重歸謬證成「神不自在、不自作」（破），再以六識取代神我本體、閻羅王問罪之喻證成「非不自作」（立），破立雙成，收束於無我而業果宛然的中道結構。白話忠於原意、不增不減；中觀欄標出各段所涉義理。</p></div></div>
+<script id="wy-bh12p10-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh12p10Btn"),BOX=document.getElementById("bh12p10Box"),MODAL=document.getElementById("bh12p10Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=9;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c12p10Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh12p10Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH12P10:END-->
 </body></html>
