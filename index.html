@@ -2612,4 +2612,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH12P10:END-->
+<!--WY-BH12P11:BEGIN-->
+<style id="wy-bh12p11-css">
+.bh12p11-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh12p11-fabbox.show{display:block;}
+.bh12p11-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh12p11-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh12p11-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh12p11-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh12p11-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh12p11-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh12p11-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh12p11-modal.open{display:flex;}
+.bh12p11-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh12p11-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh12p11-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh12p11-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh12p11-close:hover{background:#dde2e6;}
+.bh12p11-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh12p11-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh12p11-tbl th,.bh12p11-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh12p11-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh12p11-tbl thead th:nth-child(1){width:32%;}.bh12p11-tbl thead th:nth-child(2){width:41%;}.bh12p11-tbl thead th:nth-child(3){width:27%;}
+.bh12p11-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh12p11-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh12p11-guan{background:#eef2f5;color:#37505f;}
+.bh12p11-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh12p11-tbl tbody tr:nth-child(even) td.bh12p11-guan{background:#e8eef2;}
+.bh12p11-tbl tbody tr:nth-child(even) td.bh12p11-qa{background:#e7ecdb;}
+.bh12p11-tbl b{color:#8b2500;}
+.bh12p11-guan b{color:#2f6b5a;}
+.bh12p11-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh12p11-note b{color:#8b2500;}
+@media(max-width:900px){.bh12p11-fabbox{right:14px;}.bh12p11-tbl{font-size:11px;}.bh12p11-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh12p11-fabbox" id="bh12p11Box"><button class="bh12p11-btn" id="bh12p11Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh12p11-ic">譯</span><span class="bh12p11-ls"><span class="bh12p11-l1">本品 · 原文·白話·中觀</span><span class="bh12p11-l2">白話翻譯表</span></span></button></div><div class="bh12p11-modal" id="bh12p11Modal" role="dialog" aria-modal="true"><div class="bh12p11-card"><button class="bh12p11-close" id="bh12p11Close" type="button" aria-label="關閉">×</button><h3>卷十二 · 第11品 白話翻譯表（神非色相）</h3><p class="sub">大智度論卷十二·神非色相 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh12p11-tbl"><caption>神非色相 · 原文｜白話翻譯｜中觀概念（共11段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh12p11-src">若神色相者，是事不然。何以故？一切色無常故。</td><td>如果說「神我就是色相（物質形相）」，這個說法是不能成立的。為什麼呢？因為一切物質形相都是無常變化的緣故。</td><td class="bh12p11-guan"><b>立宗——以「色皆無常」駁「神即是色」</b>——開宗明義揭示本品論證主軸：神我若等同於色法，則必然共享色法「無常」的性質，此為貫穿全品三回合問答的總綱。</td></tr><tr><td class="bh12p11-qa">問曰：人云何言「色是我相」？</td><td>問：為什麼有人會說「色（物質形相）就是我（神我）之相」呢？</td><td class="bh12p11-guan"><b>設問——外道「色即我相」說的由來</b>——以提問方式引出外道具象化神我的種種說法，為下文逐一破斥預留空間。</td></tr><tr><td class="bh12p11-qa">答曰：有人言：「神在心中，微細如芥子，清淨名為淨色身。」更有人言「如麥」，有言「如豆」，有言「半寸」，有言「一寸」。初受身時，最在前受，譬如像骨；及其成身，如像已莊。有言：「大小隨人身，死壞時，此亦前出。」</td><td>答：有人說：「神我存在於心臟之中，微細得像芥子一樣，清淨無染，稱為『淨色身』。」還有人說神我像麥粒那麼大，有人說像豆子那麼大，有人說半寸大，有人說一寸大。認為神我在最初投胎受身時，是最先被領受進來的，就像塑像先立骨架一樣；等到身體長成之後，就像塑像已經裝飾完成。也有人說：「神我的大小是隨著人身而定的，人死壞的時候，神我也會最先從身體中出去。」</td><td class="bh12p11-guan"><b>外道諸說——神我具象化為「微細色身」</b>——羅列外道對神我大小、位置的種種揣測（芥子、麥、豆、寸），共同預設神我是一種「微細但仍屬物質」的實體，正是下文「一切色無常」得以直接施力破斥的靶子。</td></tr><tr><td class="bh12p11-src">如此事，皆不爾也！何以故？一切色，四大所造，因緣生故無常。若神是色，色無常，神亦無常。若無常者，如上所說。</td><td>像這樣的種種說法，全部都是不對的！為什麼呢？因為一切物質形相，都是由地、水、火、風四大元素所構成，是因緣和合而生的，所以是無常的。如果神我就是物質形相，而物質形相是無常的，那麼神我也應當是無常的。如果神我是無常的，那麼就如同前面所說的種種過失了。</td><td class="bh12p11-guan"><b>四大因緣生故無常——回扣前品邏輯鏈</b>——直接扣緊「色由四大因緣所造」的基本教義，推出「色無常」，再以「神若是色，神亦無常」的三段論式一舉否定所有具象化神我說；末句「如上所說」更將論證與前品串連為一整體邏輯鏈。</td></tr><tr><td class="bh12p11-qa">問曰：身有二種：麁身及細身。麁身無常，細身是神，世世常去入五道中。</td><td>問：身體有兩種：粗身與細身。粗身（肉眼可見的身體）是無常的，但細身（微細之身）就是神我，它是世世代代恆常地流轉，進入五道（天、人、畜生、餓鬼、地獄）輪迴之中的。</td><td class="bh12p11-guan"><b>退守策略一——麁細二元的細身說</b>——面對「色皆無常」的攻擊，外道退守為「麁身無常、細身恆常」的二分模型，將神我藏入更微細、更難以檢驗的「細身」之中，是常見的迴避歸謬手法。</td></tr><tr><td class="bh12p11-qa">答曰：此細身不可得。若有細身，應有處所可得，如五藏、四體一一處中求，皆不可得。</td><td>答：這種所謂的「細身」是找不到的。如果真的有細身存在，那應該有一個可以找到的處所才對；但無論是在五臟，還是在四肢等身體的每一個部位當中一一尋求，都是找不到的。</td><td class="bh12p11-guan"><b>方分可破——以「處所不可得」破細身</b>——採取「若實有則必有處所」的檢驗標準，遍尋五臟四體而不可得，是中觀「方分分析」（拆解至最小部分仍不可得實體）的典型操作，直接瓦解「細身即神」說。</td></tr><tr><td class="bh12p11-qa">問曰：此細身微細，初死時已去，若活時則不可求得，汝云何能見？又此細身，非五情能見能知，唯有神通聖人乃能得見。</td><td>問：這個細身極其微細，人剛死的時候它就已經離開了，如果是在活著的時候，是沒辦法找到它的，那你又怎麼能看見它來否定它的存在呢？而且這個細身，並不是眼、耳、鼻、舌、身這五種感官所能看見、能了知的，只有具足神通的聖人才能夠見到它。</td><td class="bh12p11-guan"><b>退守策略二——不可證偽的隱形化</b>——外道進一步將細身包裝成「活時不可求、死時已先去、唯神通聖人可見」，使其成為原則上無法被檢驗、無法被證偽的存在，是邏輯上的自我保護策略，也埋下下文「與無無異」的破口。</td></tr><tr><td class="bh12p11-qa">答曰：若爾者，與無無異。如人死時，捨此生陰，入中陰中。是時，今世身滅，受中陰身，此無前後，滅時即生。譬如蠟印印泥，泥中受印，印即時壞，成壞一時，亦無前後。是時，受中陰中有，捨此中陰，受生陰有。汝言細身，即此中陰，中陰身無出無入。譬如然燈，生滅相續，不常不斷。</td><td>答：如果是這樣的話，那這種不可證偽的細身就和「沒有」沒有兩樣了。就像人死亡的時候，捨棄了今生這一世的五陰之身，進入中陰身的階段。這個時候，今世的身體滅去、同時領受中陰之身，這兩者之間沒有先後的間隔，前者滅去的當下，後者就已經生起。這就好比用蠟印去印在泥上，泥上剛剛承受了印文，蠟印本身也隨即損壞，「印成」與「印壞」是同時發生的，沒有先後之別。此時，眾生領受了中陰身的存在，等到捨棄了這個中陰身，又會領受下一期生陰的存在。你所說的「細身」，其實指的就是這個中陰身；而中陰身本身，是沒有一個從此處出去、進入彼處進來的實體在移動的。這就好比燈火相傳，前燈與後燈生滅相續不斷，既不是恆常不變，也不是完全斷滅。</td><td class="bh12p11-guan"><b>蠟印印泥·然燈相續——生滅相續不常不斷</b>——以「蠟印印泥」（成壞同時、無實體轉移）與「然燈相續」（前燈後燈相續不斷、亦非恆常不變之同一燈）兩個經典譬喻，正面說明「中陰相續」的運作機制：既非有一恆常實體貫穿其中（破常），也非前後斷絕毫無關聯（破斷），是「不常不斷」中道緣起觀的具體示範。</td></tr><tr><td class="bh12p11-src">佛言：「一切色眾，若過去、未來、現在，若內、若外，若麁、若細，皆悉無常。」汝神微細色者，亦應無常斷滅。如是等種種因緣，可知非色相。</td><td>佛陀說：「一切色法的聚合，無論是過去、未來、還是現在的，無論是內在的、還是外在的，無論是粗顯的、還是微細的，全部都是無常的。」既然你所說的神我是一種微細的色法，那麼也應當是無常、會壞滅的。由於以上這種種的道理與例證，就可以知道「神我並不是色相」。</td><td class="bh12p11-guan"><b>引聖教量收束——非色相之總結</b>——引佛陀教敕作為最高權威的「聖教量」佐證：一切色法不分粗細、內外、三世，皆屬無常之列，徹底堵死外道將神我藏入「微細色」的一切退路，總結「神非色相」的階段性結論。</td></tr><tr><td class="bh12p11-src">神非無色相，無色者，四眾及無為。四眾無常故，不自在故，屬因緣故，不應是神。三無為中，不計有神，無所受故。如是等種種因緣，知神非無色相。</td><td>神我也不是「無色相」（非物質）的存在。所謂「無色」，指的是受、想、行、識四陰，以及無為法。受想行識四陰是無常的、不自在的、是屬於因緣所生的，所以不應該是神我。而在三種無為法之中，也不會有人認為那裡面存在著一個神我，因為無為法是沒有「領受」作用的。由於以上這種種的道理，可以知道神我也不是「無色相」的。</td><td class="bh12p11-guan"><b>窮舉法——遍破「無色」一切可能</b>——延續前品「有相則有法，無相則無法」的判準，將「無色」窮舉為「四陰」與「三無為」兩大範疇，逐一檢驗：四陰無常、不自在、屬因緣，不堪為神我；無為法無受用作用，亦不堪為神我。至此「色」與「無色」兩端俱被遮遣，邏輯上再無容身之處。</td></tr><tr><td class="bh12p11-src">如是天地間，若內若外，三世、十方，求我不可得。但十二入和合生六識，三事和合名觸，觸生受、想、思等心數法。是法中，無明力故身見生，身見生故謂有神。是身見，見苦諦，苦法智及苦比智則斷，斷時則不見有神。</td><td>像這樣，在天地之間，無論是內在還是外在，無論是過去、現在、未來三世，還是東西南北上下十方，遍求「神我」都是找不到的。所謂的「我」，其實只是十二入（六根與六塵）和合而產生六識，根、塵、識三者和合稱為「觸」，由「觸」再產生受、想、思等種種心理作用（心數法）。在這整個運作過程當中，由於無明（根本的愚癡）的力量，才生起了「身見」（執著有一個身心之我的錯誤見解）；因為有了身見，才會以為真的有一個「神我」存在。而這個身見，只要能夠現觀苦諦，藉由苦法智與苦比智（見道位的智慧）便能斷除；斷除的當下，就再也見不到有一個「神我」的存在了。</td><td class="bh12p11-guan"><b>十二入緣起鏈——身見的生成與斷除</b>——以「十二入→六識→觸→受想思」的緣起鏈條，說明「我」的錯覺其實是認知歷程中的產物；「身見」由無明所生，並非本有實體，故可透過見道位的苦法智、苦比智如實觀照而斷除。此為全品「神非色相」論證的終極收束，也直接銜接下一品「破妄觀心」的實修進路。</td></tr></tbody></table><p class="bh12p11-note">卷十二第11品「神非色相」原文·白話·中觀三欄對照，完整收錄原典問答：先立宗「一切色無常」，繼以三回合問答層層破斥外道具象神我（芥子微細身）、麁細二元退守（隱藏細身）、中陰隱身退守（不可證偽），終引佛語「一切色皆無常」與窮舉法遮遣「無色」一端，結歸十二入緣起生六識、身見由無明而生可由見道斷除。白話忠於原意、不增不減；中觀欄標出各段所涉義理。</p></div></div>
+<script id="wy-bh12p11-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh12p11Btn"),BOX=document.getElementById("bh12p11Box"),MODAL=document.getElementById("bh12p11Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=10;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c12p11Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh12p11Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH12P11:END-->
 </body></html>
