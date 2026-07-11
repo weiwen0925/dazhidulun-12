@@ -2816,4 +2816,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH12P14:END-->
+<!--WY-BH12P15:BEGIN-->
+<style id="wy-bh12p15-css">
+.bh12p15-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh12p15-fabbox.show{display:block;}
+.bh12p15-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh12p15-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh12p15-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh12p15-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh12p15-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh12p15-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh12p15-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh12p15-modal.open{display:flex;}
+.bh12p15-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh12p15-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh12p15-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh12p15-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh12p15-close:hover{background:#dde2e6;}
+.bh12p15-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh12p15-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh12p15-tbl th,.bh12p15-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh12p15-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh12p15-tbl thead th:nth-child(1){width:32%;}.bh12p15-tbl thead th:nth-child(2){width:41%;}.bh12p15-tbl thead th:nth-child(3){width:27%;}
+.bh12p15-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh12p15-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh12p15-guan{background:#eef2f5;color:#37505f;}
+.bh12p15-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh12p15-tbl tbody tr:nth-child(even) td.bh12p15-guan{background:#e8eef2;}
+.bh12p15-tbl tbody tr:nth-child(even) td.bh12p15-qa{background:#e7ecdb;}
+.bh12p15-tbl b{color:#8b2500;}
+.bh12p15-guan b{color:#2f6b5a;}
+.bh12p15-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh12p15-note b{color:#8b2500;}
+@media(max-width:900px){.bh12p15-fabbox{right:14px;}.bh12p15-tbl{font-size:11px;}.bh12p15-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh12p15-fabbox" id="bh12p15Box"><button class="bh12p15-btn" id="bh12p15Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh12p15-ic">譯</span><span class="bh12p15-ls"><span class="bh12p15-l1">本品 · 原文·白話·中觀</span><span class="bh12p15-l2">白話翻譯表</span></span></button></div><div class="bh12p15-modal" id="bh12p15Modal" role="dialog" aria-modal="true"><div class="bh12p15-card"><button class="bh12p15-close" id="bh12p15Close" type="button" aria-label="關閉">×</button><h3>卷十二 · 第15品 白話翻譯表（布施生羼提波羅蜜）</h3><p class="sub">大智度論卷十二·布施生羼提波羅蜜 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh12p15-tbl"><caption>布施生羼提波羅蜜 · 原文｜白話翻譯｜中觀概念（共4段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh12p15-src">云何布施生羼提波羅蜜？</td><td>布施是如何生出忍辱波羅蜜的呢？</td><td class="bh12p15-guan"><b>設問啟論·延續施度相生脈絡</b>——承接檀波羅蜜生尸羅波羅蜜之後，續問布施如何生出忍辱，顯六度相生非僅限於布施與持戒二者，而是貫穿六度的一貫理路。</td></tr><tr><td class="bh12p15-src">菩薩布施時，受者逆罵，若大求索，若不時索，或不應索而索。是時，菩薩自思惟言：「我今布施，欲求佛道，亦無有人使我布施。我自為故，云何生瞋？」如是思惟已，而行忍辱，是名布施生羼提波羅蜜。</td><td>菩薩布施的時候，受施者可能出言辱罵，或是過分索求，或是不合時宜地索求，或是不該索求卻硬要索求。這時，菩薩便自己思惟：「我如今布施，是為了追求佛道，也沒有任何人強迫我布施。我是為了自己（成就佛道）的緣故而布施，為什麼要因此生起瞋恨呢？」像這樣思惟之後，便能修行忍辱，這就叫做「布施能生出忍辱波羅蜜」。</td><td class="bh12p15-guan"><b>瞋由「他使」之見而生·破此見則瞋無所依</b>——菩薩以「無人使我布施，我自為故」破除「受委屈」之感，瞋恨往往依於「我被迫、我受損」的我執分別，一旦照見布施本是自願自為，並無「他者強加」之相可得，瞋恨便失去生起的依託，忍辱由此自然成就。</td></tr><tr><td class="bh12p15-src">復次，菩薩布施時，若受者瞋惱，便自思惟：「我今布施內外財物，難捨能捨，何況空聲而不能忍？若我不忍，所可布施則為不淨。譬如白象，入池澡浴，出已還復以土坌身；布施不忍，亦復如是。」如是思惟已，行於忍辱。</td><td>再者，菩薩布施的時候，如果受施者顯得瞋怒惱恨，便自己思惟：「我如今連內財（身體）、外財（財物）這樣難以捨棄的東西都能夠捨棄，又何況只是一些（逆耳的）聲音，反而不能忍受呢？如果我不能忍耐，那麼先前所做的布施也就變得不清淨了。就好比白象，才剛入池洗淨了身體，一出池後又用泥土沾污自身；布施之後若不能忍辱，也是同樣的道理（等於前功盡棄）。」像這樣思惟之後，便修行忍辱。</td><td class="bh12p15-guan"><b>不忍則淨施反成染污·白象喻明</b>——以白象浴後復自坌土為喻，說明忍辱之於布施猶如「保任清淨」的最後一環：布施本已具足捨心之淨德，若因逆境不能忍而生瞋，則前功盡棄、淨施反染，顯忍辱是使布施功德得以保全、不被自身瞋心所毀壞的必要條件。</td></tr><tr><td class="bh12p15-src">如是等種種布施因緣，生羼提波羅蜜。</td><td>像這樣種種布施的因緣，能夠生出忍辱波羅蜜。</td><td class="bh12p15-guan"><b>總結收束</b>——以此句總結前述二重思惟（自為故不應瞋、不忍則淨施染污）皆是布施因緣引生忍辱的具體理路，收束本品「施生忍」之義，與前品「施生戒」前後呼應，共顯六度環環相生之勢。</td></tr></tbody></table><p class="bh12p15-note">卷十二第15品「布施生羼提波羅蜜」原文·白話·中觀三欄對照，述菩薩布施逢受者逆罵苛求時，以「我自為故，云何生瞋」及「白象浴後坌土」二重思惟對治瞋恨、成就忍辱，末以「如是種種布施因緣」總結，與前品「施生戒」前後呼應。白話忠於原意、不增不減；中觀欄標出各段所涉義理。</p></div></div>
+<script id="wy-bh12p15-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh12p15Btn"),BOX=document.getElementById("bh12p15Box"),MODAL=document.getElementById("bh12p15Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=14;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c12p15Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh12p15Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH12P15:END-->
 </body></html>
