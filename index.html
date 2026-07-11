@@ -2765,4 +2765,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH12P13:END-->
+<!--WY-BH12P14:BEGIN-->
+<style id="wy-bh12p14-css">
+.bh12p14-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh12p14-fabbox.show{display:block;}
+.bh12p14-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh12p14-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh12p14-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh12p14-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh12p14-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh12p14-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh12p14-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh12p14-modal.open{display:flex;}
+.bh12p14-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh12p14-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh12p14-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh12p14-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh12p14-close:hover{background:#dde2e6;}
+.bh12p14-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh12p14-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh12p14-tbl th,.bh12p14-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh12p14-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh12p14-tbl thead th:nth-child(1){width:32%;}.bh12p14-tbl thead th:nth-child(2){width:41%;}.bh12p14-tbl thead th:nth-child(3){width:27%;}
+.bh12p14-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh12p14-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh12p14-guan{background:#eef2f5;color:#37505f;}
+.bh12p14-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh12p14-tbl tbody tr:nth-child(even) td.bh12p14-guan{background:#e8eef2;}
+.bh12p14-tbl tbody tr:nth-child(even) td.bh12p14-qa{background:#e7ecdb;}
+.bh12p14-tbl b{color:#8b2500;}
+.bh12p14-guan b{color:#2f6b5a;}
+.bh12p14-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh12p14-note b{color:#8b2500;}
+@media(max-width:900px){.bh12p14-fabbox{right:14px;}.bh12p14-tbl{font-size:11px;}.bh12p14-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh12p14-fabbox" id="bh12p14Box"><button class="bh12p14-btn" id="bh12p14Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh12p14-ic">譯</span><span class="bh12p14-ls"><span class="bh12p14-l1">本品 · 原文·白話·中觀</span><span class="bh12p14-l2">白話翻譯表</span></span></button></div><div class="bh12p14-modal" id="bh12p14Modal" role="dialog" aria-modal="true"><div class="bh12p14-card"><button class="bh12p14-close" id="bh12p14Close" type="button" aria-label="關閉">×</button><h3>卷十二 · 第14品 白話翻譯表（布施生尸羅波羅蜜）</h3><p class="sub">大智度論卷十二·布施生尸羅波羅蜜 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh12p14-tbl"><caption>布施生尸羅波羅蜜 · 原文｜白話翻譯｜中觀概念（共12段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh12p14-src">云何菩薩布施生尸羅波羅蜜？</td><td>菩薩的布施是如何生出持戒波羅蜜的呢？</td><td class="bh12p14-guan"><b>設問啟論</b>——以設問開啟「布施如何引生持戒」的因果關聯探討，逗出下文層層因緣說明，顯六度雖各有名相，實則相攝相生、非各自孤立。</td></tr><tr><td class="bh12p14-src">菩薩思惟：「眾生不布施故，後世貧窮；以貧窮故，劫盜心生；以劫盜故而有殺害；以貧窮故，不足於色；色不足故而行邪婬。又以貧窮故，為人下賤；下賤畏怖而生妄語——如是等貧窮因緣故，行十不善道。若行布施，生有財物，有財物故，不為非法。何以故？五塵充足，無所乏短故。」</td><td>菩薩思惟：「眾生因為不布施的緣故，後世便會貧窮；因為貧窮，便生起偷盜之心；因為偷盜，便有殺害之事；因為貧窮，在情欲上得不到滿足；因為得不到滿足，便會行邪淫。又因為貧窮，被人輕賤；因為卑賤、心懷恐懼，便生出妄語——像這樣種種都是由貧窮的因緣，而造作十種不善之業。如果能行布施，便能生出財物，有了財物，就不會做非法之事。為什麼呢？因為色、聲、香、味、觸五塵受用充足，沒有匱乏的緣故。」</td><td class="bh12p14-guan"><b>貧窮為十惡之緣，非十惡之因</b>——此段細列貧窮如何依次「引生」劫盜、殺害、邪婬、妄語等惡業，顯示諸惡並非孤立自生，而是層層因緣相扣所致；布施能斷此因緣鏈的起點（貧窮），非直接消滅惡業本身，正是「緣起」而非「宿命」的展現。</td></tr><tr><td class="bh12p14-src">如提婆達本生曾為一蛇，與一蝦蟇、一龜，在一池中，共結親友。其後池水竭盡，飢窮困乏，無所控告。時蛇遣龜以呼蝦蟇，蝦蟇說偈以遣龜言：</td><td>就像提婆達多（的本生故事），曾經投生為一條蛇，與一隻蝦蟆、一隻烏龜，同在一座池中，結為好友。後來池水乾涸，三者都陷入飢餓窮困，無處可以求告。這時蛇便派烏龜去呼喚蝦蟆，蝦蟆用偈頌回覆烏龜說：</td><td class="bh12p14-guan"><b>本生譬喻承接上義</b>——藉提婆達多蛇身本生故事說明匱乏（池水竭盡）之苦，為下文「不布施故貧窮受苦」的義理提供具體敘事印證，異類眾生亦困於因緣匱乏，顯苦受不揀道別。</td></tr><tr><td class="bh12p14-src">若修布施，後生有福，無所短乏，則能持戒，無此眾惡，是為布施能生尸羅波羅蜜。</td><td>如果能修行布施，日後便會生在有福報之處，沒有匱乏窮困，於是就能持守戒律，不會有以上種種罪惡，這就是「布施能生出持戒波羅蜜」的道理。</td><td class="bh12p14-guan"><b>回攝設問·完成第一因果環</b>——呼應區塊1的設問，以「有福無乏故能持戒」總結布施與持戒的因果關聯，完成第一重論證：先破貧窮之苦，戒行方有所依托而得成就。</td></tr><tr><td class="bh12p14-src">復次，布施之報，得四事供養，好國善師，無所乏少，故能持戒。</td><td>再者，布施的果報，能得到衣服、飲食、臥具、湯藥四事供養不缺，出生在良善的國土、遇見良師，樣樣不缺乏，因此能夠持戒。</td><td class="bh12p14-guan"><b>果報具足為持戒外緣</b>——四事供養、好國善師皆屬持戒的外部助緣，非持戒本身之因，此段顯示布施所感的善果報，僅是成就持戒的資糧與環境，並非戒體本身由布施而生，因緣各有分際。</td></tr><tr><td class="bh12p14-src">復次，布施時，能令破戒諸結使薄，益持戒心，令得堅固；是為布施因緣增益於戒。</td><td>再者，在布施的當下，能使容易破戒的種種煩惱結使變得淡薄，增益持戒之心，使其更加堅固；這就是布施的因緣能增益持戒的道理。</td><td class="bh12p14-guan"><b>布施當下即對治煩惱</b>——此段指出布施不僅是「未來得福」的間接助緣，布施「當下」的心行本身即能對治煩惱結使，直接增益持戒之力，顯布施與持戒二度在修行當下即有相即相攝之效，非僅前後因果之隔。</td></tr><tr><td class="bh12p14-src">復次，菩薩布施，常於受者生慈悲心，不著於財，自物不惜，何況劫盜？慈悲受者，何有殺意？如是等能遮破戒，是為施生戒。</td><td>再者，菩薩布施的時候，常常對受施者生起慈悲之心，不執著於財物，自己的東西都不吝惜了，何況去偷盜他人的財物呢？既然對受施者心懷慈悲，又哪裡會生起殺害之意呢？像這樣的道理，能夠遮止種種破戒之因，這就是「布施能生出持戒」的道理。</td><td class="bh12p14-guan"><b>不著財·不起貪瞋</b>——「不著於財」是布施心的核心，由不著財而自然不生盜心、不生殺意，顯持戒非另需外加的規範壓抑，而是布施所培養的無貪、無瞋心行自然流露的結果，戒由施心中自然生起。</td></tr><tr><td class="bh12p14-src">若能布施以破慳心，然後持戒、忍辱等，易可得行。</td><td>如果能透過布施來破除慳吝之心，那麼此後要修持戒、忍辱等其他法門，就容易做到了。</td><td class="bh12p14-guan"><b>破慳為六度共同基礎</b>——慳吝為布施之首要對治，此段點出「破慳」不僅成就布施本身，更是持戒、忍辱等後續諸度得以順利開展的共同基礎，六度雖次第宣說，實有一貫相通之理路。</td></tr><tr><td class="bh12p14-src">又布施之報，其心調柔；心調柔故，能生持戒；能生持戒故，從不善法中能自制心。</td><td>再者，布施的果報，會使人的心變得調和柔軟；因為心調柔的緣故，就能生出持戒之心；因為能持戒的緣故，便能在種種不善法之中，自我克制、不隨之流轉。</td><td class="bh12p14-guan"><b>心調柔為施戒之樞紐</b>——「調柔」是布施果報與持戒能力之間的關鍵樞紐：布施先軟化剛強我執之心，柔軟之心才堪任持戒之自制，顯心地的調伏是六度相生鏈條中不可或缺的中介環節。</td></tr><tr><td class="bh12p14-src">如文殊師利，在昔過去久遠劫時曾為比丘，入城乞食，得滿鉢百味歡喜丸。城中一小兒，追而從乞。不即與之，乃至佛圖，手捉二丸而要之言：</td><td>就像文殊師利菩薩，在過去久遠劫以前，曾經作一位比丘，入城乞食，得到滿鉢的百味歡喜丸。城裡有一個小孩，追在後面向他乞討。他沒有立刻給予，一直走到佛塔前，才手拿兩個歡喜丸，對小孩提出條件說：</td><td class="bh12p14-guan"><b>延緩布施非慳吝·別有度化深意</b>——文殊不立即施與，非是慳吝遲疑，而是為了引導小兒同時種下歸依三寶、布施眾僧的善根，顯菩薩布施善巧兼顧當下與長遠，不只是財物的給予，更寓有教化度眾之方便。</td></tr><tr><td class="bh12p14-src">「汝若能自食一丸，以一丸施僧者，當以施汝！」即相然可，以一歡喜丸布施眾僧，然後於文殊師利許受戒，發心作佛。如是布施，能令受戒發心作佛，是為布施生尸羅波羅蜜。</td><td>「你如果能自己吃一個，把另一個布施給僧眾，我就把（手上）這兩個都給你！」小孩當下便答應了，將一個歡喜丸布施供養僧眾，然後在文殊師利跟前受戒，發起成佛之心。像這樣的布施，能使人因此受戒、發起成佛之心，這就是「布施能生出持戒波羅蜜」的道理。</td><td class="bh12p14-guan"><b>一施牽動受戒發心</b>——小兒因一丸之施，連帶受戒、發菩提心，顯布施的因緣力用不僅止於財物轉移的當下，更能牽引後續持戒、發心等一連串善法生起，一因能牽多果，因緣網絡環環相扣。</td></tr><tr><td class="bh12p14-src">如是種種因緣，從布施生尸羅波羅蜜。</td><td>像以上這樣種種的因緣，說明了持戒波羅蜜是從布施波羅蜜中出生的。</td><td class="bh12p14-guan"><b>總結全品·收束因緣鏈</b>——以「如是種種因緣」總收前文十一段層層論證，顯此品所述並非單一比喻或孤例，而是多重因緣角度（果報、心行、本生、公案）交織互證「施生戒」之理，六度相生非泛泛比擬，而有嚴密因緣理路可循。</td></tr></tbody></table><p class="bh12p14-note">卷十二第14品「布施生尸羅波羅蜜」原文·白話·中觀三欄對照，述布施如何依次斷除貧窮致惡之因緣鏈、增益持戒之心，並以提婆達本生（蛇龜蝦蟆喻匱乏之苦）、文殊師利本生（歡喜丸度化小兒受戒發心）二則本生公案印證，末以「如是種種因緣」總結全品。白話忠於原意、不增不減；中觀欄標出各段所涉義理。</p></div></div>
+<script id="wy-bh12p14-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh12p14Btn"),BOX=document.getElementById("bh12p14Box"),MODAL=document.getElementById("bh12p14Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=13;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c12p14Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh12p14Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH12P14:END-->
 </body></html>
